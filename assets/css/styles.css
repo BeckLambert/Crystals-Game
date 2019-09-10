@@ -1,0 +1,47 @@
+.buttons {
+   width: 100%;
+   margin-top: 100px;
+}
+
+#imgOne {
+    height: 100px;
+    width: 100px;
+}
+#imgTwo {
+    height: 100px;
+    width: 100px;
+}
+#imgThree {
+    height: 100px;
+    width: 100px;
+}
+#imgFour {
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    background-color: orange;
+    width: 35%;
+    padding: 40px;
+}
+
+.paragraph {
+    background-color: aqua;
+    width: 40%;
+    height: 20%;
+    padding: 30px;
+
+}
+
+#scoreCount {
+    background-color: olivedrab;
+    width: 20%;
+}
+
+#yourScore {
+    background-color: olivedrab;
+    width: 20%;
+    padding: 35px;
+    margin-top: 10px;
+}
