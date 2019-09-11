@@ -26,23 +26,31 @@
   <h1> Crystals Collector!</h1>
   <div class="paragraph">
     <p> You will be given a random number at the start of the game.</p>
-    <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-    <p> You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+    <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+      score.</p>
+    <p> You win the game by matching your total score to the random number, you lose the game if your total score goes
+      above the random number.</p>
     <p> The value of each crystal is hidden from you until you click on it.</p>
     <p> Each time when the game starts, the game will change the values of each crystal.</p>
   </div>
 
+  <div class="container">
+    <div class="row">
+    <div class="col-md-4" id="score"> Total score </div>
+    <div class="col-md-2" id="counter"> wins/losses </div>
+  </div>
+  </div>
 
-    <div class="buttons">
-      <button type="button" class="btn btn-secondary"> <img id="imgOne" src="assets/images/crystalOne.jpg"/></button>
-      <button type="button" class="btn btn-secondary"><img id="imgTwo" src="assets/images/crystalTwo.jpg"/></button>
-      <button type="button" class="btn btn-secondary" ><img id="imgThree" src="assets/images/crystalThree.jpg"/></button>
-      <button type="button" class="btn btn-secondary" ><img id="imgFour" src="assets/images/crystalFour.jpg"/></button>
-    </div>
+  <div class="buttons">
+    <button type="button" class="btn btn-secondary"> <img id="imgOne" src="assets/images/crystalOne.jpg" /></button>
+    <button type="button" class="btn btn-secondary"><img id="imgTwo" src="assets/images/crystalTwo.jpg" /></button>
+    <button type="button" class="btn btn-secondary"><img id="imgThree" src="assets/images/crystalThree.jpg" /></button>
+    <button type="button" class="btn btn-secondary"><img id="imgFour" src="assets/images/crystalFour.jpg" /></button>
+  </div>
 
-    <div id="scoreCount"> score count</div>
-    <div id="yourScore"> your score </div>
-      <script src="text/javascript">
+  <div id="scoreCount"> Your total score is: </div>
+  <div id="yourScore"> score count </div>
+  <script src="text/javascript">
     //   GLOBAL VARS
     var targetScore = ''
     var roundScore = ''

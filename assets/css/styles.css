@@ -1,29 +1,39 @@
+body {
+    background-image: url("https://image.shutterstock.com/image-photo/organic-light-blue-paper-kraft-260nw-541453984.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+
 .buttons {
    width: 100%;
-   margin-top: 100px;
+   margin-top: 10px;
+   margin-left: 10px;
 }
 
 #imgOne {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 #imgTwo {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 #imgThree {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 #imgFour {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 
 h1 {
     background-color: orange;
     width: 35%;
     padding: 40px;
+    margin-left: 10px;
 }
 
 .paragraph {
@@ -31,12 +41,16 @@ h1 {
     width: 40%;
     height: 20%;
     padding: 30px;
+    margin-left: 10px;
 
 }
 
 #scoreCount {
     background-color: olivedrab;
     width: 20%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 #yourScore {
@@ -44,4 +58,26 @@ h1 {
     width: 20%;
     padding: 35px;
     margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container {
+    width: 100%;
+    margin-left: 10px;
+}
+
+#score {
+    padding: 30px;
+    margin-top: 10px;
+    height: 250px;
+    background-color: magenta;
+}
+
+#counter {
+    width: 10%;
+    height: 250px;
+    padding: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: magenta;
 }
