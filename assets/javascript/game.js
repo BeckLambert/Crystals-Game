@@ -7,7 +7,6 @@ var crystals = ["#assets/images/crystalOne.jpg",
     "assets/images/crystalTwo.jpg",
     "assets/images/crystalThree.jpg",
     "assets/images/crystalFour.jpg"]
-console.log(crystals);
 
 // The player will be shown a random number at the start of the game between 19 - 120..
 function startGame() {
@@ -23,9 +22,13 @@ $(".crystals").on("click", function () {
         var crystalValue = 1 + Math.floor(Math.random() * 11);
     console.log(crystalValue);
     $("button").val(crystalValue);
+    // When they do click one, update the player's score counter.
+        var userScore = $(this).attr(userScore, crystalValue);
+        $("#scoreCount").text(userScore);
 });
-// When they do click one, update the player's score counter.
-//     function addToRoundScore() {}
+
+
+    
 
 
 // The player wins if their total score matches the random number from the beginning of the game.
@@ -37,7 +40,9 @@ $(".crystals").on("click", function () {
 
 // The game restarts whenever the player wins or loses.
 // When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
-//     function gameReset() {}
+    // function gameReset() {
+
+    // }
 
 
 

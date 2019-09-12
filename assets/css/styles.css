@@ -51,14 +51,17 @@ h1 {
     padding: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #yourScore {
     background-color: royalblue;
     width: 20%;
     padding: 35px;
+    height: 100px;
     margin-top: 10px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -69,13 +72,13 @@ h1 {
 #target-score {
     padding: 30px;
     margin-top: 10px;
-    height: 250px;
+    height: 150px;
     background-color: darkgrey;
 }
 
 #counter {
     width: 10%;
-    height: 250px;
+    height: 150px;
     padding: 50px;
     margin-top: 10px;
     margin-left: 10px;
