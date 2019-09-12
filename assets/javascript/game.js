@@ -1,8 +1,9 @@
 //   Global Variables
 var targetScore = "";
-var roundScore = "";
+var roundScore = 0;
 var wins = "";
 var losses = "";
+var crystalValue = 0;
 var crystals = ["#assets/images/crystalOne.jpg",
     "assets/images/crystalTwo.jpg",
     "assets/images/crystalThree.jpg",
@@ -17,14 +18,20 @@ function startGame() {
 startGame()
 
 // When the player clicks on a crystal, it will add a specific amount of points to the player's total score with a random hidden value between 1 - 12.
+function updateScore() {
+crystalValue = 1 + Math.floor(Math.random() * 11);
+for (var i = 0; i < crystals.length; i++)
+console.log(crystalValue);
+$("button").val(crystalValue);
+// When they do click one, update the player's score counter.
+roundScore += crystalValue
+// = $(this).attr(crystalValue);
+$("#scoreCount").text(roundScore);
+}
+
+
 $(".crystals").on("click", function () {
-    for (var i = 0; i < crystals.length; i++)
-        var crystalValue = 1 + Math.floor(Math.random() * 11);
-    console.log(crystalValue);
-    $("button").val(crystalValue);
-    // When they do click one, update the player's score counter.
-        var userScore = $(this).attr(userScore, crystalValue);
-        $("#scoreCount").text(userScore);
+       updateScore(crystalValue);
 });
 
 

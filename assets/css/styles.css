@@ -45,7 +45,7 @@ h1 {
 
 }
 
-#scoreCount {
+#yourScore {
     background-color: royalblue;
     width: 20%;
     padding: 10px;
@@ -54,7 +54,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-#yourScore {
+#scoreCount {
     background-color: royalblue;
     width: 20%;
     padding: 35px;
