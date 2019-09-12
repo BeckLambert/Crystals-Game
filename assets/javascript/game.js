@@ -1,8 +1,8 @@
 //   Global Variables
 var targetScore = "";
 var roundScore = 0;
-var wins = "";
-var losses = "";
+var wins = 0;
+var losses = 0;
 var crystalValue = 0;
 var crystals = ["#assets/images/crystalOne.jpg",
     "assets/images/crystalTwo.jpg",
@@ -27,6 +27,18 @@ $("button").val(crystalValue);
 roundScore += crystalValue
 // = $(this).attr(crystalValue);
 $("#scoreCount").text(roundScore);
+}
+
+function winsLosses() {
+if (roundScore === targetScore) {
+    wins++;
+    $("#counter").text("wins: " + wins);
+    alert("wins");
+} else if (roundScore > targetScore){
+    losses++;
+    // $("#counter").text("Losses: " + losses)
+    alert("Game over");
+}
 }
 
 
