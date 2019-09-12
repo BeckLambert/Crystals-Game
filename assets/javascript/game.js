@@ -3,21 +3,24 @@ var targetScore = "";
 var roundScore = "";
 var wins = "";
 var losses = "";
-var crystals = {
-    crystal1: {
-        val: '',
-        name: ''
-    }
-}
- //     function startGame() {}
+// var crystals = {
+//     crystal1: {
+//         val: '',
+//         name: ''
+//     }
+// }
 
 // The player will be shown a random number at the start of the game between 19 - 120..
- 
-  //     function generateRandomNumber() {
-    //       return Math...
-    //     }
+     function startGame() {
+        targetScore = 19 + Math.floor(Math.random() * 121);
+        console.log("Target Score: " + targetScore);
+        $("#target-score").text("Target Score: " + targetScore);
+     };
 
 // When the player clicks on a crystal, it will add a specific amount of points to the player's total score with a random hidden value between 1 - 12.
+$(".crystals").on("click", function() {
+    alert("clicked!");
+});
 // When they do click one, update the player's score counter.
 //     function addToRoundScore() {}
 
@@ -36,5 +39,5 @@ var crystals = {
 
 
 
-    //   JQUERY CLICK EVENTS
-    //     ${'.crystals1').on('click', function() {})}
+   
+      
