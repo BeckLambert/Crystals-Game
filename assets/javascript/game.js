@@ -17,33 +17,52 @@ function startGame() {
 }
 startGame()
 
+
+
 // When the player clicks on a crystal, it will add a specific amount of points to the player's total score with a random hidden value between 1 - 12.
+
+
 function updateScore() {
 crystalValue = 1 + Math.floor(Math.random() * 11);
-for (var i = 0; i < crystals.length; i++)
+for (var i = 0; i < crystals.each; i++)
 console.log(crystalValue);
 $("button").val(crystalValue);
 // When they do click one, update the player's score counter.
 roundScore += crystalValue
-// = $(this).attr(crystalValue);
 $("#scoreCount").text(roundScore);
 }
+updateScore()
 
 function winsLosses() {
-if (roundScore === targetScore) {
-    wins++;
-    $("#counter").text("wins: " + wins);
-    alert("wins");
-} else if (roundScore > targetScore){
-    losses++;
-    // $("#counter").text("Losses: " + losses)
-    alert("Game over");
+    if (roundScore < targetScore){
+        losses++;
+        alert("Game over");
+        reset()
+        } else (roundScore === targetScore) 
+            wins++;
+            alert("wins");
+            reset()
 }
+winsLosses();
+
+
+function reset() {
+    updateScore();
+    startGame();
+    roundScore = 0;
+    $("#scoreCount").text(roundScore);
 }
+
+
+
+$("#wins").text("Wins: " + wins);
+$("#losses").text("Losses: " + losses);
+
+
 
 
 $(".crystals").on("click", function () {
-       updateScore(crystalValue);
+       updateScore(roundScore);
 });
 
 
