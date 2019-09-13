@@ -4,7 +4,7 @@ var roundScore = 0;
 var wins = 0;
 var losses = 0;
 var crystalValue = 0;
-var crystals = ["#assets/images/crystalOne.jpg",
+var crystals = ["assets/images/crystalOne.jpg",
     "assets/images/crystalTwo.jpg",
     "assets/images/crystalThree.jpg",
     "assets/images/crystalFour.jpg"]
@@ -31,19 +31,23 @@ $("button").val(crystalValue);
 roundScore += crystalValue
 $("#scoreCount").text(roundScore);
 }
-updateScore()
+// updateScore()
 
 function winsLosses() {
-    if (roundScore < targetScore){
+    if (roundScore > targetScore){
         losses++;
+        $("#losses").text(losses);
         alert("Game over");
         reset()
-        } else (roundScore === targetScore) 
-            wins++;
-            alert("wins");
-            reset()
+    } else if (roundScore === targetScore) {
+        wins++;
+        $("#wins").text(wins);
+        alert("wins");
+        reset()
+    }
+    
 }
-winsLosses();
+
 
 
 function reset() {
@@ -55,14 +59,13 @@ function reset() {
 
 
 
-$("#wins").text("Wins: " + wins);
-$("#losses").text("Losses: " + losses);
 
 
 
 
 $(".crystals").on("click", function () {
-       updateScore(roundScore);
+    updateScore(roundScore);
+    winsLosses();
 });
 
 
